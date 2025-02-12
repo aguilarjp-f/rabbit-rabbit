@@ -3,7 +3,7 @@
 <workbook>
 <preferences> 
 
-<color-palette name="~ C08: Top Heavy" type="regular","ordered-sequential">
+<color-palette name="~ C08: Top Heavy" type="regular">
   <color> #5115f7 </color>
   <color> #5e12f1 </color>
   <color> #9000ca </color>
@@ -14,7 +14,7 @@
   <color> #db1515 </color>
   </color-palette>
 
-<color-palette name="~ C09: ROAS Color" type="regular","ordered-sequential">
+<color-palette name="~ C09: ROAS Color" type="regular">
   <color> #5115f7 </color>
   <color> #8702d3 </color>
   <color> #9000ca </color>			
@@ -26,7 +26,7 @@
   <color> #db1515 </color>
   </color-palette>
 
-<color-palette name="~ C26: White-Blue" type="regular","ordered-sequential">
+<color-palette name="~ C26: White-Blue" type="regular">
   <color> #264a62 </color>
   <color> #2e4f67 </color>
   <color> #36556c </color>
