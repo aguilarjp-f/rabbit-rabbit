@@ -1,0 +1,11 @@
+//# My Courses
+CASE [University]
+WHEN 'LSE' THEN 'JP'
+
+ELSE
+CASE [@ UC Abbrev]
+WHEN 'STAN-NUT' THEN 'JP'
+WHEN 'HAR-BOK' THEN 'JP'
+
+ELSE 'Other'
+END END
