@@ -4,15 +4,15 @@
 <preferences> 
 
 <color-palette name="~ C08: Top Heavy" type="regular","ordered-sequential">
-			<color> #5115f7 </color>
-			<color> #5e12f1 </color>
-			<color> #9000ca </color>
-			<color> #aa00a7 </color>
-			<color> #bb0087 </color>
-			<color> #c70069 </color>
-			<color> #d0004e </color>
-			<color> #db1515 </color>
-			</color-palette>
+  <color> #5115f7 </color>
+	<color> #5e12f1 </color>
+  <color> #9000ca </color>
+  <color> #aa00a7 </color>
+  <color> #bb0087 </color>
+  <color> #c70069 </color>
+  <color> #d0004e </color>
+  <color> #db1515 </color>
+  </color-palette>
 
 <color-palette name="~ C09: ROAS Color" type="regular","ordered-sequential">
   <color> #5115f7 </color>
