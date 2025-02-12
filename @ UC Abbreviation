@@ -1,0 +1,19 @@
+//@ UC Abbreviation
+IF CONTAINS(lower([Campaign]),"cam-camcons") THEN "CAM-CAMCONS"
+ELSEIF CONTAINS(lower([Campaign]),"edx-edxcons") THEN "EDX-EDXCONS"
+ELSEIF CONTAINS(lower([Campaign]),"lse-lseportfolio") THEN "LSE-LSEPORTFOLIO"
+ELSEIF CONTAINS(lower([Campaign]),"ee-mgmt") THEN "EDX-EE-MGMT"
+ELSEIF CONTAINS(lower([Campaign]),"cons-high-rev-top14") THEN "CONS-HIGH-REV-TOP14"
+ELSEIF CONTAINS(lower([Campaign]),"cons-mid") THEN "CONS-MID"
+ELSEIF CONTAINS(lower([Campaign]),"cons-low") THEN "CONS-LOW"
+ELSEIF CONTAINS(lower([Campaign]),"mit-blnblc") THEN "MIT-MITBLNBLC"
+ELSEIF CONTAINS(lower([Campaign]),"mit-mitportfolio") THEN "MIT-MITPORTFOLIO"
+ELSEIF CONTAINS(lower([Campaign]),"uct-uctportfolio") THEN "UCT-UCTPORTFOLIO"
+ELSEIF CONTAINS(lower([Campaign]),"uct-low") THEN "UCT-LOW"
+ELSEIF CONTAINS(lower([Campaign]),"uct-low") THEN "UCT-HIGH"
+ELSEIF CONTAINS(lower([Campaign]),"oxfindex") THEN "OXF-OXFINDEX"
+ELSEIF CONTAINS(lower([Campaign]),"uct-uctportfolio") THEN "UCT-UCTPORTFOLIO"
+ELSEIFISNULL([University]+"-"+[Course Abbreviation]) 
+	THEN replace(replace(replace(replace(upper(replace(SPLIT([Campaign],"|",2),"ss","")),"GENERIC-INT","GENERAL-generic-int"),"GETSMARTER-BRD","GENERAL-BRAND|BRAND"),"OXF-STRATEGY","OXF-SSSTRATEGY"),"UNI-FOCUS-UCT","UCT-uni-focus-uct")
+ELSE [University]+"-"+[Course Abbreviation] 
+END
