@@ -1,0 +1,18 @@
+//~ Month (Feb v Aug)
+
+CASE DATENAME('year',[Day])+"."+DATENAME('month',[Day])
+WHEN '2025.February' THEN '2025.Jan-Feb'
+WHEN '2025.January' THEN '2025.Jan-Feb'
+
+WHEN '2024.June' THEN '2024.Jun-Aug'
+WHEN '2024.July' THEN '2024.Jun-Aug'
+WHEN '2024.August' THEN '2024.Jun-Aug'
+
+WHEN '2024.January' THEN '2024.Jan-Feb'
+WHEN '2024.February' THEN '2024.Jan-Feb'
+
+WHEN '2024.March' THEN '2024.Mar-May'
+WHEN '2024.Apr' THEN '2024.Mar-May'
+WHEN '2024.May' THEN '2024.Mar-May'
+
+ELSE 'Other' END
