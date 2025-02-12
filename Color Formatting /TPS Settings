@@ -3,14 +3,13 @@
 <workbook>
 <preferences> 
 
-<color-palette name="~ C08: Top Heavy" type="regular">
+<color-palette name="~ C08: ROAS Color" type="regular">
   <color> #5115f7 </color>
   <color> #5e12f1 </color>
   <color> #9000ca </color>
   <color> #aa00a7 </color>
   <color> #bb0087 </color>
   <color> #c70069 </color>
-  <color> #d0004e </color>
   <color> #db1515 </color>
   </color-palette>
 
@@ -22,7 +21,6 @@
   <color> #9e00b9 </color>
   <color> #a400b1 </color>
   <color> #a900a8 </color>
-  <color> #cc0059 </color>
   <color> #db1515 </color>
   </color-palette>
 
