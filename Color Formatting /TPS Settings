@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+
+<workbook>
+<preferences> 
+
+<color-palette name="~ C08: Top Heavy" type="regular","ordered-sequential">
+			<color> #5115f7 </color>
+			<color> #5e12f1 </color>
+			<color> #9000ca </color>
+			<color> #aa00a7 </color>
+			<color> #bb0087 </color>
+			<color> #c70069 </color>
+			<color> #d0004e </color>
+			<color> #db1515 </color>
+			</color-palette>
+
+<color-palette name="~ C09: ROAS Color" type="regular","ordered-sequential">
+  <color> #5115f7 </color>
+  <color> #8702d3 </color>
+  <color> #9000ca </color>			
+  <color> #9700c2 </color>
+  <color> #9e00b9 </color>
+  <color> #a400b1 </color>
+  <color> #a900a8 </color>
+  <color> #cc0059 </color>
+  <color> #db1515 </color>
+  </color-palette>
+
+<color-palette name="~ C26: White-Blue" type="regular","ordered-sequential">
+  <color> #264a62 </color>
+  <color> #2e4f67 </color>
+  <color> #36556c </color>
+  <color> #3e5b71 </color>
+  <color> #456176 </color>
+  <color> #4d667b </color>
+  <color> #546c80 </color>
+  <color> #5b7286 </color>
+  <color> #63788b </color>
+  <color> #6a7e90 </color>
+  <color> #718595 </color>
+  <color> #798b9b </color>
+  <color> #8091a0 </color>
+  <color> #8897a5 </color>
+  <color> #8f9eab </color>
+  <color> #97a4b0 </color>
+  <color> #9eaab6 </color>
+  <color> #a6b1bb </color>
+  <color> #adb7c1 </color>
+  <color> #b7c0c8 </color>
+  <color> #c1c8cf </color>
+  <color> #cbd1d6 </color>
+  <color> #d5d9dd </color>
+  <color> #dfe2e4 </color>
+  <color> #e9eaec </color>
+  <color> #f3f3f3 </color>
+  </color-palette>
+
+</preferences>
+</workbook>
+
