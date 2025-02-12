@@ -8,3 +8,17 @@ ELSEIF [ROAS] >=4 AND [ROAS] <5 THEN "High Profit"
 ELSEIF [ROAS] >=5 THEN "Amazing"
 ELSE "Error"
 END
+
+
+/*
+<color-palette name="~ ROAS Colour" type="regular">
+	<color> #5115f7	</color>
+	<color> #5e12f1	</color>
+  <color> #9000ca	</color>
+  <color> #aa00a7	</color>
+	<color> #bb0087	</color>
+	<color> #c70069	</color>
+	<color> #d0004e	</color>
+	<color> #db1515	</color>
+</color-palette>
+*/
