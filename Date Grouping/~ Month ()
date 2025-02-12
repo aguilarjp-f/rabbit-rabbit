@@ -1,0 +1,17 @@
+//~ Month ()
+CASE DATENAME('month',[Day])
+WHEN 'January' THEN 'Jan'
+WHEN 'February' THEN 'Feb'
+WHEN 'March' THEN 'Mar'
+WHEN 'April' THEN 'Apr'
+WHEN 'May' THEN 'May'
+WHEN 'June' THEN 'Jun'
+WHEN 'July' THEN 'Jul'
+WHEN 'August' THEN 'Aug'
+WHEN 'September' THEN 'Sep'
+WHEN 'October' THEN 'Oct'
+WHEN 'November' THEN 'Nov'
+WHEN 'December' THEN 'Dec'
+
+ELSE 'error'
+END

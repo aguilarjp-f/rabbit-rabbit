@@ -1,0 +1,8 @@
+//~ DOW (Weekend)
+IF 
+    datename('weekday',[Day]) = 'Saturday' OR 
+    datename('weekday',[Day]) = 'Sunday' THEN
+        'Sat/Sun'
+
+ELSE 'Mon-Fri'
+END
