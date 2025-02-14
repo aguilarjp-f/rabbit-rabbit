@@ -1,0 +1,10 @@
+//Checks if the date in the [Day] field is in the same month and year as today's date. 
+//If yes, returns [Spend] field; if not, it returns 0
+IF 
+  MONTH([Day]) = MONTH(TODAY()) AND  
+  YEAR([Day]) = YEAR(TODAY()) 
+THEN 
+  [Spend]
+ELSE 
+  0
+END
