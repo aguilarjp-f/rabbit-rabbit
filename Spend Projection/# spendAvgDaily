@@ -1,0 +1,5 @@
+/*Finds avg daily MTD spend by dividing the total spend 
+by the average # of days passed in the dataset.
+Using an AVG here because of aggregation rules.
+*/
+SUM([# spendMTD (Excl. LXD)]) / AVG([~ daysPassed (Complete)])

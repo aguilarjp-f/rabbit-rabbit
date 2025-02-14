@@ -1,0 +1,11 @@
+/*Checks diff in days ebtween [Day] & Today().
+If >= Paramter, then return Spend.
+If not, return 0.
+Used to filter out Today & yesterday spend data from projection.*/
+IF 
+  DATEDIFF('day', [Day], TODAY()) >= [# LXD Spend Exclusion] 
+THEN 
+  [Spend]
+ELSE 
+  0
+END

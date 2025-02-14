@@ -1,0 +1,34 @@
+IF 
+  MIN([~ dateDiff (Month)]) = 0 AND
+  AVG([~ daysPassed (Complete)]) < [# spendProjection (LXD)] 
+THEN 
+  SUM([# spendMTD (Excl. LXD)]) + ([# spendAvgDaily] * [~ daysLeft (MTD)])
+ELSEIF 
+  MIN([~ Datediff (Week)]) = 0 
+THEN 
+  SUM([# spendMTD (Excl. LXD)]) + ((SUM([# spend (LXD)])) / [# spendProjection (LXD)]) * (AVG([~ daysLeft (MTD)]))
+ELSE 
+  SUM([Spend]) 
+END
+
+
+/*
+First Condition (IF statement):
+
+MIN([~ dateDiff (Month)]) = 0 AND AVG([~ daysPassed (Complete)]) < 7:
+MIN([~ dateDiff (Month)]) = 0 checks if the current data is from the current month (0 means the current month).
+AVG([~ daysPassed (Complete)]) < 7 checks if the average number of days passed is less than 7.
+If true, it projects the spend for the current month using:
+SUM([# spendMTD (Excl. LXD)]) (total spend so far, excluding LXD).
+It adds the projected spend for the remaining days of the month ([ # spendAvgDaily ] * [~ daysLeft (MTD)]).
+Second Condition (ELSEIF statement):
+
+MIN([~ Datediff (Week)]) = 0:
+This checks if the data is from the current week (0 means the current week).
+If true, it projects the spend by:
+SUM([# spendMTD (Excl. LXD)]) (total spend so far).
+Adding the average daily spend from the last 7 days (SUM([# Spend (L7D)]) / 7), multiplied by the remaining days in the month (AVG([~ daysLeft (MTD)])).
+Default Condition (ELSE statement):
+
+If neither condition is true, it simply returns the total spend (SUM([Spend])).
+*/

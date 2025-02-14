@@ -1,0 +1,2 @@
+//Returns # of days that have passed in the current month, including today.
+DATEDIFF('day', DATETRUNC('month', TODAY()), TODAY())
