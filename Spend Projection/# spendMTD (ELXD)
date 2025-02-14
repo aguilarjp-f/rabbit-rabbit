@@ -3,7 +3,7 @@ If >= Paramter, then return Spend.
 If not, return 0.
 Used to filter out Today & yesterday spend data from projection.*/
 IF 
-  DATEDIFF('day', [Day], TODAY()) >= [# LXD Spend Exclusion] 
+  DATEDIFF('day', [Day], TODAY()) >= [# spendMTD (Excl. LXD)]
 THEN 
   [Spend]
 ELSE 
