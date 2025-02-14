@@ -1,0 +1,5 @@
+/*Find maximum # of days between today and the date 
+that is 1 day before the [~ spendCheck (dateMissing)] value, 
+using the MAX function to return the largest difference.
+*/
+{ MAX(DATEDIFF('day', TODAY(), ([~ spendCheck (dateMissing)] - 1))) }
