@@ -1,3 +1,4 @@
+DATETRUNC('month', TODAY())
+
 /*If today is February 14, 2025, 
 DATETRUNC('month', TODAY()) will return February 1, 2025.*/
-DATETRUNC('month', TODAY())
