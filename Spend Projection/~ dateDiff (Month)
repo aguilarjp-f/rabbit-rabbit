@@ -1,0 +1,2 @@
+//~ dateDiff (Month)
+ABS(DATEDIFF('month', [Day], TODAY()))
