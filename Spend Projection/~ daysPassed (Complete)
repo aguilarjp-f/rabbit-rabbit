@@ -1,7 +1,8 @@
+DATEDIFF('day', [~ mtdStart (Day)] - 1, DATEADD('day', [. spendCheck (numDays)], TODAY())) - 1
+
 /*Finds the number of days between:
   1 day before the month-to-date start date ([~ mtdStart (Day)] - 1)
   & a future date obtained by adding the number of days 
     ([ . spendCheck (numDays)]) to today's date.
 Then subtracts 1 from the final result.
 */
-DATEDIFF('day', [~ mtdStart (Day)] - 1, DATEADD('day', [. spendCheck (numDays)], TODAY())) - 1
