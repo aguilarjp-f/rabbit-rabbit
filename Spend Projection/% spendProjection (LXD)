@@ -1,15 +1,16 @@
 IF 
   MIN([~ dateDiff (Month)]) = 0 AND
-  AVG([~ daysPassed (Complete)]) < 7 
+  AVG([~ daysPassed (Complete)]) < [# spendProjection (LXD)] 
 THEN 
   SUM([# spendMTD (Excl. LXD)]) + ([# spendAvgDaily] * [~ daysLeft (MTD)])
 ELSEIF 
   MIN([~ Datediff (Week)]) = 0 
 THEN 
-  SUM([# spendMTD (Excl. LXD)]) + ((SUM([# Spend (L7D)]) / 7) * (AVG([~ daysLeft (MTD)])))
+  SUM([# spendMTD (Excl. LXD)]) + ((SUM([# spend (LXD)])) / [# spendProjection (LXD)]) * (AVG([~ daysLeft (MTD)]))
 ELSE 
   SUM([Spend]) 
 END
+
 
 /*
 First Condition (IF statement):
