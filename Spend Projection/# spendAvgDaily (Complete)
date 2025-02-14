@@ -1,3 +1,4 @@
+{ FIXED MONTH([Day]), YEAR([Day]) : SUM([. spendCheck (MTD)]) } / [~ daysPassed (MTD)]
+
 /*Finds avg daily spend for the current month and year 
 by dividing the mtd spend by # of days passed mtd*/
-{ FIXED MONTH([Day]), YEAR([Day]) : SUM([. spendCheck (MTD)]) } / [~ daysPassed (MTD)]
