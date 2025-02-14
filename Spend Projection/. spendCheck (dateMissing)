@@ -1,10 +1,10 @@
-/*Checks if spend for a specific day is < 60% of the average daily. 
-If yes, returns the earliest day associated with the spend flag.
-If no, return null*/
-
 IF 
   { FIXED DAY([Day]), MONTH([Day]), YEAR([Day]) : SUM([. spendCheck (MTD)]) } 
   < ([# spendAvg (Daily)] * 0.6)
 THEN 
   { FIXED [. spendCheck (Flag)] : MIN([Day]) }
 END
+
+/*Checks if spend for a specific day is < 60% of the average daily. 
+If yes, returns the earliest day associated with the spend flag.
+If no, return null*/
