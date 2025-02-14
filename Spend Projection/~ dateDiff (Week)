@@ -1,2 +1,2 @@
-//~ ~ dateDiff (Week)
+//~ dateDiff (Week)
 ABS(DATEDIFF('week', [Day], TODAY()))
