@@ -1,4 +1,4 @@
-//# Spend (L7D)
+//# spend (L7D)
 IF 
   [Day] >= DATEADD('day', -8, TODAY()) AND
   DATEDIFF('day', [Day], TODAY()) >= 2 
