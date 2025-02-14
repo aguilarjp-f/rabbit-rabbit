@@ -1,0 +1,14 @@
+IF 
+  [Day] >= DATEADD('day', 0-1-[# spendProjection (LXD)], TODAY()) AND
+  DATEDIFF('day', [Day], TODAY()) >= [# LXD Spend Exclusion] 
+THEN 
+  [Spend]
+ELSE 
+  0
+END
+
+/*
+Checks if the [Day] is greater than or equal to a date adjusted by 
+[ # spendProjection (LXD)] and if the number of days between [Day] and today 
+is greater than or equal to [ # LXD Spend Exclusion].
+*/

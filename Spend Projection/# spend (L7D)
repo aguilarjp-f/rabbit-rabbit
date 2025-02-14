@@ -1,9 +1,0 @@
-//# spend (L7D)
-IF 
-  [Day] >= DATEADD('day', -8, TODAY()) AND
-  DATEDIFF('day', [Day], TODAY()) >= 2 
-THEN 
-  [Spend]
-ELSE 
-  0
-END
