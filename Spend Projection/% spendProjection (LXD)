@@ -4,7 +4,7 @@ IF
 THEN 
   SUM([# spendMTD (Excl. LXD)]) + ([# spendAvgDaily] * [~ daysLeft (MTD)])
 ELSEIF 
-  MIN([~ Datediff (Week)]) = 0 
+  MIN([~ dateDiff (Week)]) = 0 
 THEN 
   SUM([# spendMTD (Excl. LXD)]) + ((SUM([# spend (LXD)])) / [# spendProjection (LXD)]) * (AVG([~ daysLeft (MTD)]))
 ELSE 
