@@ -1,2 +1,2 @@
-//~ Days Left (MTD)
+//~ daysLeft (MTD)
 DATEDIFF('day', TODAY(), DATETRUNC('month', DATEADD('month', 1, TODAY()))) + 1
