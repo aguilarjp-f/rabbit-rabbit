@@ -1,0 +1,12 @@
+/*
+Checks if the total spend for a particular day, month, and year is below 60% of the average daily spend for the month. If it is, it returns 'Spend Missing', otherwise, it returns 'Spend Complete'.
+*/
+
+IF 
+  { FIXED DAY([Day]), MONTH([Day]), YEAR([Day]): SUM([. spendCheck (MTD)]) } 
+  < ([*Average Daily Spend This Month] * 0.6)
+THEN 
+  'Spend Missing'
+ELSE 
+  'Spend Complete'
+END
