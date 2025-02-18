@@ -1,2 +1,2 @@
 //! Media Key (Formatted)
-UPPER([@ UC Abbrev]+"_"+[Media Type]+"_"+[@Geo])
+UPPER([@ UC Abbrev]+"_"+[Media Type]+"_"+[@ Geo])
