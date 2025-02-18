@@ -50,8 +50,8 @@ ELSEIF  [Media Type] = "NonBrand Search" AND [@ UC Abbrev] = "UCT-PMG"THEN "comb
 ELSEIF  [Media Type] = "NonBrand Search" AND [@ UC Abbrev] = "UCT-DPP"THEN "combined_"+lower( [@ WTPs])
 ELSEIF  [Media Type] = "NonBrand Search" AND [@ UC Abbrev] = "UCT-STM"THEN "combined_"+lower( [@ WTPs])
 ELSEIF  [Media Type] = "NonBrand Search" AND [@ UC Abbrev] = "UCT-IVM"THEN "combined_"+lower( [@ WTPs])
-ELSEIF contains(lower([*TCPA Brand Programs]), "tcpa") AND [Media Type] = "Brand Search" THEN lower([@ WTPs])
-ELSEIF contains(lower([*TCPA NonBrand Programs]), "tcpa") AND [Media Type] = "NonBrand Search" THEN lower([@ WTPs])
+ELSEIF contains(lower([^ tCPA Brand]), "tcpa") AND [Media Type] = "Brand Search" THEN lower([@ WTPs])
+ELSEIF contains(lower([^ tCPA Nonbrand]), "tcpa") AND [Media Type] = "NonBrand Search" THEN lower([@ WTPs])
 //Facebook://
 elseif contains(lower([Campaign]),"f1") then TRIM( SPLIT( [Campaign], "|", 6 ) )
 elseif contains(lower([Campaign]),"f2") then TRIM( SPLIT( [Campaign], "|", 6 ) )
