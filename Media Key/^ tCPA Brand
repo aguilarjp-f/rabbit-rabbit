@@ -1,5 +1,5 @@
 //^ tCPA Brand
-CASE [@ UC Abbrev]
+CASE [@ UC Abbreviation]
 WHEN "CAM-BRAND"THEN "TCPA Program"
 WHEN "CAM-WLC"THEN "TCPA Program"
 WHEN "CAM-GOV"THEN "TCPA Program"
