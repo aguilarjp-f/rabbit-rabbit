@@ -1,5 +1,5 @@
 //^ tCPA Nonbrand
-CASE [@ UC Abbrev]
+CASE [@ UC Abbreviation]
 WHEN "CAM-BSM"THEN "TCPA Program"
 WHEN "YALE-WLP"THEN "TCPA Program"
 WHEN "UCT-MCM"THEN "TCPA Program"
