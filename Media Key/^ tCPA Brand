@@ -1,4 +1,5 @@
 //^ tCPA Brand
+//Last Updated 21 Feb 2025
 CASE [@ UC Abbreviation]
 WHEN "CAM-BRAND"THEN "TCPA Program"
 WHEN "CAM-WLC"THEN "TCPA Program"
@@ -68,3 +69,4 @@ WHEN "UCT-FOCUS-UCT"THEN "TCPA Program"
 WHEN "MIT-ARTIFICIAL INTELLIGENCE"THEN "TCPA Program"
 WHEN "LSE-DAM"THEN "TCPA Program"
 WHEN "MIT-SUR"THEN "TCPA Program"
+END
