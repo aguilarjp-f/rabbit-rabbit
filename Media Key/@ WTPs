@@ -1,3 +1,4 @@
+//@ WTPs
 //Last updated 19 Feb
 case [Campaign]
 when "ggl|cam-bsm|sem|global|brd|core|auto" then "WTP0"
