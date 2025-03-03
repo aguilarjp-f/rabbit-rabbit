@@ -1,0 +1,5 @@
+//~ Excl. Today
+datediff('day',[Day],today())>=1
+then 'True'
+else 'False'
+end
