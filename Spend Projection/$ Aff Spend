@@ -1,0 +1,4 @@
+IF CONTAINS(lower([Medium]),"forbe") THEN ([# Leads])*.7*75
+
+ELSEIF [Media Type] = "Affiliate" THEN [# Leads]*27
+ELSE [Spend] END
