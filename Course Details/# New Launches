@@ -1,0 +1,16 @@
+//Last updated Apr 2
+CASE [@ UC Abbreviation]
+WHEN "YALE-YSWLSS"THEN "New Launch"
+WHEN "ECON-CRIT"THEN "New Launch"
+WHEN "CAM-GOV"THEN "New Launch"
+WHEN "MIT-SUR"THEN "New Launch"
+WHEN "LSE-LCPAMN"THEN "New Launch"
+WHEN "LSE-DVA"THEN "New Launch"
+WHEN "ECON-AISI"THEN "New Launch"
+WHEN "UCT-MCM"THEN "New Launch"
+WHEN "YALE-SCL"THEN "New Launch"
+WHEN "MIT-MTAISE"THEN "New Launch"
+WHEN "CHO-SLW"THEN "New Launch"
+WHEN "ECON-IPAW"THEN "New Launch"
+WHEN "LSE-LPG"THEN "New Launch"
+END
