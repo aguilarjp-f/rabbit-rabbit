@@ -1,0 +1,37 @@
+//# Course: Consolidations
+//aka Portfolio/Granular
+IF CONTAINS(lower([@ UC Abbreviation]),"uni-focus") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"focus-uct") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"getsmarter-brd") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"-brand") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"general-") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"ee-mgmt") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"uctportfolio") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"blnblc") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"oxfindex") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"mit-all") THEN "Portfolio"
+ELSEIF CONTAINS(lower([Campaign]),"mit-ssai") THEN "Portfolio"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"-sustainability") THEN "Portfolio"
+ELSEIF CONTAINS(LOWER([Campaign]),"ssbrand") THEN "Portfolio"
+ELSEIF CONTAINS(LOWER([Campaign]),"edxcons")
+OR CONTAINS(LOWER([Campaign]),"camcons")
+OR CONTAINS(LOWER([Campaign]),"lseportfolio")
+OR CONTAINS(LOWER([Campaign]),"mitportfolio")then "Consolidated"
+elseif CONTAINS([Campaign], 'aban') AND  CONTAINS([Campaign], 'displ') THEN "Consolidated"
+elseif CONTAINS([Campaign], 'rem') AND  CONTAINS([Campaign], 'cart') THEN "Consolidated"
+elseif CONTAINS(LOWER([Campaign]),"uct-low") THEN "Consolidated"
+ELSEIF   CONTAINS(LOWER([Campaign]),"uct-mid") THEN "Consolidated"
+ELSEIF  CONTAINS(LOWER([Campaign]),"uct-high") THEN "Consolidated"
+elseif CONTAINS(LOWER([Medium]),"forbe") THEN "Portfolio"
+elseif CONTAINS([Campaign],"niche") THEN "Consolidated"
+elseif CONTAINS([Campaign],"standard") THEN "Consolidated"
+elseif CONTAINS([Campaign],"mid-cons") THEN "Consolidated"
+ELSEIF contains(LOWER([Campaign]),"rev-top14") THEN "Consolidated"
+ELSEIF contains(LOWER([Campaign]),"cons-low") THEN "Consolidated"
+ELSEIF contains(LOWER([Campaign]),"cons-mid") THEN "Consolidated"
+ELSEIF contains(LOWER([Campaign]), "rev-low") THEN "Consolidated"
+ELSEIF  CONTAINS(LOWER([*Geo]),"combined") THEN "Consolidated"
+elseif CONTAINS([Campaign], 'aban') AND  CONTAINS([Campaign], 'displ') THEN "Consolidated"
+elseif CONTAINS([Campaign], 'rem') AND  CONTAINS([Campaign], 'cart') THEN "Consolidated"
+ELSE "BAU"
+END
