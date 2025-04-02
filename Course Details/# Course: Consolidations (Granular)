@@ -1,0 +1,35 @@
+//# Course: Consolidations (Granular)
+//Last updated Apr 2
+IF CONTAINS(lower([@ UC Abbreviation]),"uni-focus") THEN "Uni-Focus"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"-brand") THEN "Portfolio Brand Search"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"general-") THEN "Portfolio General"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"ee-mgmt") THEN "RV EE MGMT Portfolio Page"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"uctportfolio") THEN "Portfolio UCT Page"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"blnblc") THEN "MIT-BLN-BLC Portfolio Page"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"oxfindex") THEN "OXF Portfolio Page"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"mit-all") THEN "MIT-AI Portfolio Page"
+ELSEIF CONTAINS(lower([Campaign]),"mit-ssai") THEN "MIT-AI Portfolio Page"
+ELSEIF CONTAINS(lower([@ UC Abbreviation]),"-sustainability") THEN "Sustainability Portfolio Page"
+ELSEIF CONTAINS(LOWER([Campaign]),"ssbrand") THEN "Portfolio Brand Search"
+ELSEIF CONTAINS(LOWER([Campaign]),"edxcons")
+OR CONTAINS(LOWER([Campaign]),"camcons")
+OR CONTAINS(LOWER([Campaign]),"lseportfolio")
+OR CONTAINS(LOWER([Campaign]),"mitportfolio")then [@ UC Abbreviation]
+elseif CONTAINS([Campaign], 'aban') AND  CONTAINS([Campaign], 'displ') THEN "Display Abandon Cart"
+elseif CONTAINS([Campaign], 'rem') AND  CONTAINS([Campaign], 'cart') THEN "Remarketing to Cart"
+elseif CONTAINS(LOWER([Campaign]),"uct-low") THEN "UCT-Low"
+ELSEIF   CONTAINS(LOWER([Campaign]),"uct-mid") THEN "UCT-Mid"
+ELSEIF  CONTAINS(LOWER([Campaign]),"uct-high") THEN "UCT-High"
+elseif CONTAINS(LOWER([Medium]),"forbe") THEN "Forbes"
+elseif CONTAINS([Campaign],"niche") THEN "Niche Meta"
+elseif CONTAINS([Campaign],"standard") THEN "Standard Meta"
+elseif CONTAINS([Campaign],"mid-cons") THEN "Mid Revenue Consolidated"
+ELSEIF contains(LOWER([Campaign]),"rev-top14") THEN "Top 14 Consolidated"
+ELSEIF contains(LOWER([Campaign]),"cons-low") THEN "Low Revenue Consolidated"
+ELSEIF contains(LOWER([Campaign]),"cons-mid") THEN "Mid Revenue Consolidated"
+ELSEIF contains(LOWER([Campaign]), "rev-low") THEN "Low Revenue Consolidated"
+ELSEIF  CONTAINS(LOWER([*Geo]),"combined") THEN "Combined WTP"
+elseif CONTAINS([Campaign], 'aban') AND  CONTAINS([Campaign], 'displ') THEN "Display Abandon Cart"
+elseif CONTAINS([Campaign], 'rem') AND  CONTAINS([Campaign], 'cart') THEN "Remarketing to Cart"
+ELSE "BAU"
+END
