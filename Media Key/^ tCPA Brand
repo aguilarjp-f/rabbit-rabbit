@@ -1,5 +1,5 @@
 //^ tCPA Brand
-//Last Updated 15 January
+//Last Updated 08 April
 CASE [@ UC Abbreviation]
 WHEN "CAM-BRAND" THEN "TCPA Program"
 WHEN "CAM-WLC" THEN "TCPA Program"
@@ -20,6 +20,7 @@ WHEN "LSE-PPA" THEN "TCPA Program"
 WHEN "LSE-PRE" THEN "TCPA Program"
 WHEN "LSE-REF" THEN "TCPA Program"
 WHEN "LSE-ETAI" THEN "TCPA Program"
+//WHEN "LSE-LPG" THEN "TCPA Program" //Max Conv., new launch 04/07
 WHEN "HAR-BRAND" THEN "TCPA Program"
 WHEN "LSE-BRAND" THEN "TCPA Program"
 WHEN "MIT-AHC" THEN "TCPA Program"
@@ -65,8 +66,28 @@ WHEN "MIT-SL" THEN "TCPA Program"
 WHEN "MIT-BLC" THEN "TCPA Program"
 WHEN "MIT-BLC" THEN "TCPA Program"
 WHEN "CHO-SLW" THEN "TCPA Program"
-WHEN "UCT-FOCUS-UCT" THEN "TCPA Program"
+WHEN "UCTFOCUS-UCT" THEN "TCPA Program"
 WHEN "MIT-ARTIFICIAL INTELLIGENCE" THEN "TCPA Program"
 WHEN "LSE-DAM" THEN "TCPA Program"
-WHEN "MIT-SUR" THEN "TCPA Program"
+WHEN "UCT-CON" THEN "TCPA Program"
+WHEN "UCT-HR" THEN "TCPA Program"
+WHEN "UCT-PAR" THEN "TCPA Program"
+WHEN "UCT-FBM" THEN "TCPA Program"
+WHEN "UCT-MA" THEN "TCPA Program"
+WHEN "UCT-DM" THEN "TCPA Program"
+WHEN "UCT-AGP" THEN "TCPA Program"
+WHEN "UCT-ACC" THEN "TCPA Program"
+WHEN "UCT-BSA" THEN "TCPA Program"
+WHEN "UCT-MCM" THEN "TCPA Program"
+WHEN "UCT-DA" THEN "TCPA Program"
+WHEN "UCT-CP" THEN "TCPA Program"
+WHEN "UCT-OM" THEN "TCPA Program"
+WHEN "UCT-TDM" THEN "TCPA Program"
+WHEN "UCT-GD" THEN "TCPA Program"
+WHEN "UCT-APM" THEN "TCPA Program"
+WHEN "UCT-BAN" THEN "TCPA Program"
+WHEN "UCT-OHS" THEN "TCPA Program"
+WHEN "UCT-PDI" THEN "TCPA Program"
+//WHEN "LSE-EPP" THEN "TCPA Program" //Upcoming launch
+//WHEN "LSE-PCS" THEN "TCPA Program" //Upcoming launch
 END
