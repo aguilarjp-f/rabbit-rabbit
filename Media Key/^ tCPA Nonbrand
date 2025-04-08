@@ -1,5 +1,5 @@
 //^ tCPA Nonbrand
-//Last Updated 19 February
+//Last Updated 08 April
 CASE [@ UC Abbreviation]
 WHEN "CAM-BSM" THEN "TCPA Program"
 WHEN "YALE-WLP" THEN "TCPA Program"
@@ -90,4 +90,6 @@ WHEN "MIT-ITS" THEN "TCPA Program"
 WHEN "CAM-MBM" THEN "TCPA Program"
 WHEN "CAM-SUP" THEN "TCPA Program"
 WHEN "LSE-DAM" THEN "TCPA Program"
-END
+//WHEN "LSE-LPG" THEN "TCPA Program" //Max Conv., new launch 04/07
+//WHEN "LSE-EPP" THEN "TCPA Program" //Upcoming launch
+//WHEN "LSE-PCS" THEN "TCPA Program" //Upcoming launch
