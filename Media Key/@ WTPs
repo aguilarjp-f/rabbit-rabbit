@@ -1,5 +1,5 @@
 //@ WTPS
-//Last updated Apr 2
+//Last updated Apr 8
 case [Campaign]
 when "ggl|cam-bsm|sem|global|brd|core|auto" then "WTP0"
 when "ggl|cam-wlc|sem|global|brd|core|auto" then "WTP0"
@@ -476,4 +476,8 @@ when "ggl|getsmarter-brd|sem|global-t3|brd|core|usd" then "GLOBAL_T3"
 when "ggl|getsmarter-brd|sem|za|brd|core|usd" then "ZA"
 when "ggl|getsmarter-brd|sem|global-t4|brd|core|usd" then "GLOBAL_T4"
 when "ggl|lse-pre|sem|global-t1|nbd|high-volume-2|auto" then "WTP-HV2"
+when "ggl|lse-lpg|sem|global|brd|core|auto" then "BBS/Manual"
+when "ggl|lse-lpg|sem|global-t2|nbd|core|auto" then "BBS/Manual"
+when "ggl|lse-lpg|sem|uk-t1|nbd|core|auto" then "BBS/Manual"
+when "ggl|lse-lpg|sem|global-t1|nbd|core|auto" then "BBS/Manual"
 when NULL then "Null Campaign" else "BBS/Manual" end
