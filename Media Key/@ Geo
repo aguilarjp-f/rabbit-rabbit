@@ -1,5 +1,5 @@
 //@ Geo
-//Last Updated 19 February
+//Last Updated 08 Apr
 IF [Media Type] = "Brand Search" AND [@ UC Abbreviation] = "CAM-CLC" THEN LOWER([@ WTPs])
 ELSEIF [Media Type] = "Brand Search" AND [@ UC Abbreviation] = "CAM-HIL" THEN LOWER([@ WTPs])
 ELSEIF [Media Type] = "Brand Search" AND [@ UC Abbreviation] = "CAM-INF" THEN "combined_"+LOWER([@ WTPs])
