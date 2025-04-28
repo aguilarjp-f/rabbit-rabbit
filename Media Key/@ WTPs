@@ -1,5 +1,5 @@
 //@ WTPs
-//Last updated Apr 22
+//Last updated Apr 25
 case [Campaign]
 when "ggl|cam-bsm|sem|global|brd|core|auto" then "WTP0"
 when "ggl|cam-wlc|sem|global|brd|core|auto" then "WTP0"
@@ -480,4 +480,8 @@ when "ggl|lse-lpg|sem|global|brd|core|auto" then "BBS/Manual"
 when "ggl|lse-lpg|sem|global-t2|nbd|core|auto" then "BBS/Manual"
 when "ggl|lse-lpg|sem|uk-t1|nbd|core|auto" then "BBS/Manual"
 when "ggl|lse-lpg|sem|global-t1|nbd|core|auto" then "BBS/Manual"
+when "ggl|oxf-ari|sem|uk|nbd|broad|auto" then "WTP-BROAD"
+when "ggl|oxf-ari|sem|eu|nbd|broad|auto" then "WTP-BROAD"
+when "ggl|oxf-mnb|sem|eu-uk|nbd|broad|auto" then "WTP-BROAD"
+when "ggl|oxf-aim|sem|uk|nbd|broad|auto" then "WTP-BROAD"
 when NULL then "Null Campaign" else "BBS/Manual" end
